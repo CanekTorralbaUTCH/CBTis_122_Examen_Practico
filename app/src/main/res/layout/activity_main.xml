@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondoandroid"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="78dp"
+        android:layout_marginTop="31dp"
+        android:text="Usuario"
+        android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+        android:textColor="@android:color/darker_gray" />
+
+    <EditText
+        android:id="@+id/Usuario"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView4"
+        android:layout_alignBottom="@+id/textView4"
+        android:layout_marginStart="46dp"
+        android:layout_toEndOf="@+id/textView4"
+        android:background="@android:color/background_light"
+        android:ems="10"
+        android:hint="CURP"
+        android:inputType="textPersonName" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/textView4"
+        android:layout_centerVertical="true"
+        android:text="Contraseña:"
+        android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+        android:textColor="@android:color/darker_gray" />
+
+    <EditText
+        android:id="@+id/Contrasenia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/Usuario"
+        android:layout_alignTop="@+id/textView5"
+        android:background="@android:color/background_light"
+        android:ems="10"
+        android:inputType="textPassword" />
+
+    <Button
+        android:id="@+id/Acceder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:text="Acceder" />
+
+</RelativeLayout>

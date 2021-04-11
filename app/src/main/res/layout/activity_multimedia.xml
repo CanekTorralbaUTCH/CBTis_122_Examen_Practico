@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondoandroid"
+    tools:context=".Multimedia">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="365dp">
+
+        <VideoView
+            android:id="@+id/video"
+            android:layout_width="280dp"
+            android:layout_height="165dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true" />
+
+        <Button
+            android:id="@+id/BotonMaestro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/gif"
+            android:layout_below="@+id/gif"
+            android:layout_marginStart="30dp"
+            android:text="Iniciar/Detener" />
+
+        <Spinner
+            android:id="@+id/Canciones"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/BotonMaestro"
+            android:layout_marginTop="15dp"
+            android:background="@android:color/background_light" />
+
+        <Button
+            android:id="@+id/Pause"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/Canciones"
+            android:layout_marginTop="19dp"
+            android:text="Pause" />
+
+        <Button
+            android:id="@+id/Play"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/Pause"
+            android:layout_marginStart="31dp"
+            android:layout_toEndOf="@+id/Pause"
+            android:text="Play" />
+
+        <Button
+            android:id="@+id/Stop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/Play"
+            android:layout_centerHorizontal="true"
+            android:text="Stop" />
+
+        <Button
+            android:id="@+id/YouTube"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/Canciones"
+            android:layout_alignTop="@+id/Stop"
+            android:text="Ver" />
+
+        <ImageView
+            android:id="@+id/gif"
+            android:layout_width="230dp"
+            android:layout_height="150dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true" />
+
+        <TextView
+            android:id="@+id/eleccion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignStart="@+id/BotonMaestro"
+            android:text="blabla"
+            android:textColor="@color/colorPrimaryDark"/>
+    </RelativeLayout>
+</ScrollView>
